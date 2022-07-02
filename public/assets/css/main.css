@@ -1,0 +1,92 @@
+body{
+    background-color: #f9f9f9;
+}
+.head-name{
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1.5rem;
+    margin-top: 1.4rem;
+    font-weight: bold;
+}
+h4{
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+label{
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 725px) {
+    .head-name{
+        font-size: 1rem;
+    }
+    body{
+        width: 100%;
+    }
+  }
+     /* styling for front id start*/
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .front-image{
+        background-image: url(../images/cards/fontdesign.jpeg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 22rem;
+        height: 13.5rem;
+        width: 32%;
+        border-radius: 1rem;
+        border: 0.1rem solid black;
+        
+    }
+    .name {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        margin-top: 6rem;
+        margin-left: 5rem;
+    }
+    .sign{
+        margin-left: 8rem;
+        margin-top: 0.7rem;
+    }
+    .img{
+        border: 0.3rem solid white;
+        border-bottom-right-radius: 1.5rem;
+        height: 7.3rem;
+        margin-left: 1.7rem;
+        margin-top: 5.4rem;
+    }
+
+    /* styling for front id end*/
+
+    /* styling for card back */
+    .back-image{
+        background-image: url(../images/cards/back-main.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20rem;
+        height: 13.5rem;
+        width: 32%;
+        border-radius: 1rem;
+        border: 0.1rem solid black;
+    }
+    .card > div{
+        color: black;
+        font-size: 0.73rem;
+        font-weight: bolder;
+        font-family: Times New Roman; 
+    }
+    .img-2{
+        height: 0.8rem;
+        /* margin-bottom: 1rem; */
+    }
+    
+    /* styling for card back  end*/
+
+    

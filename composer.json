@@ -1,0 +1,19 @@
+{
+    "name": "hp/gskill_project_1.0",
+    "description": "cms for student management",
+    "authors": [
+        {
+            "name": "onojah friday",
+            "email": "onojahfriday@gmail.com"
+        }
+    ],
+    "require": {
+        "altorouter/altorouter": "1.1.0",
+        "nyholm/psr7": "^1.2",
+        "filp/whoops": "^2.5",
+        "catfan/medoo": "^1.7",
+        "twig/twig": "^2.0",
+        "vlucas/phpdotenv": "^2.5",
+        "php-curl-class/php-curl-class": "^8.8"
+    }
+}

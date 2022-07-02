@@ -1,0 +1,157 @@
+{% include 'partials/gsk_admin_head.html' %}
+
+    <!-- body start -->
+    <body class="loading" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "sidebar": { "color": "light", "size": "default", "showuser": false}, "topbar": {"color": "dark"}, "showRightSidebarOnPageLoad": true}'>
+
+        <!-- Begin page -->
+        <div id="wrapper">
+            {% include 'partials/topbar.html'%}
+
+            <!-- Topbar Start -->
+
+<!-- end Topbar -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            {% include 'partials/root_sidebar.html'%}
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        
+                        <!-- start page title -->
+                             <h3>All Users</h3>
+                         
+                        <!-- end page title --> 
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row justify-content-between">
+                                            <div class="col-md-9">
+                                                <form method="POST" action="/action/search" class="d-flex flex-wrap align-items-center">
+                                                    <label for="inputPassword2" class="visually-hidden">Search</label>
+                                                    <div class="col-9">
+                                                        <input type="search" class="form-control" name="search" id="inputPassword2" placeholder="Search...">
+                                                    
+                                                    </div>
+                                                    <div class="col-3">
+
+                                                    <button class="btn btn-info" name="submit">OK</button>                                                        
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div> <!-- end row -->
+                                    </div>
+                                </div> <!-- end card -->
+                            </div><!-- end col-->
+                        </div>
+                        <!-- end row -->
+
+                        <table class="table table-bordered mt-4">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">firstname</th>
+                                <th scope="col">Lastname</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone Number</th>
+                                <th scope="col">Personal Id</th>
+                                <th scope="col">Date Registered</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                            </thead>
+                              
+                            <tbody>
+                              {% for user in customer%}
+                              <tr>
+                                <th scope="row">{{ loop.index }}</th>
+                                <td>{{ user.firstname }}</td>
+                                <td>{{ user.lastname }}</td>
+                                <td>{{ user.email }}</td>
+                                <td>{{ user.phone }}</td>
+                                <td>{{ user.personalID}}</td>
+                                <td>{{ user.date }}</td>
+                                <td> 
+                                  <a href="/user-edit/{{user.id}}" class="btn btn-success">View</a>
+                                 </td>
+                              </tr>
+                              {% endfor %}
+                            </tbody>
+                          </table>
+                               
+                    </div>
+                    
+
+                </div> <!-- content -->
+
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <script>document.write(new Date().getFullYear())</script> &copy; GSK <a href="">Gskill managment</a> 
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-end footer-links d-none d-sm-block">
+                                    <a href="javascript:void(0);">About Us</a>
+                                    <a href="javascript:void(0);">Help</a>
+                                    <a href="javascript:void(0);">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+        <!-- Right Sidebar -->
+
+
+                </div> 
+
+            </div> <!-- end slimscroll-menu-->
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- Vendor js -->
+        <script src="../assets/js/vendor.min.js"></script>
+
+        <!-- Chart JS -->
+        <script src="../assets/libs/chart.js/Chart.bundle.min.js"></script>
+
+        <script src="../assets/libs/moment/min/moment.min.js"></script>
+        <script src="../assets/libs/jquery.scrollto/jquery.scrollTo.min.js"></script>
+
+        <!-- Chat app -->
+        <script src="../assets/js/pages/jquery.chat.js"></script>
+
+        <!-- Todo app -->
+        <script src="../assets/js/pages/jquery.todo.js"></script>
+
+        <!-- Dashboard init JS -->
+        <script src="../assets/js/pages/dashboard-3.init.js"></script>
+
+        <!-- App js-->
+        <script src="../assets/js/app.min.js"></script>
+        
+    </body>
+</html>

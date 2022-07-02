@@ -1,0 +1,18 @@
+
+Fail to call object on page request App->rootAccess
+Fail to call object on page request App->rootAccess
+Fail to call object on page request Auth->rootAccess
+Fail to call object on page request User->deleteUser
+Fail to call object on page request User->deleteUser
+Fail to call object on page request User->deleteUser
+Fail to call object on page request AuthUser->createUser
+Fail to call object on page request AuthUser->createUser
+Fail to call object on page request AuthUser->createUser
+Fail to call object on page request AuthUser->createUser
+Fail to call object on page request AuthUser->createUser
+Fail to call object on page request AuthUser->createUser
+Fail to call object on page request AuthUser->createUser
+Fail to call object on page request AuthUser->allUser
+Fail to call object on page request AuthUser->createUser
+Fail to call object on page request AuthUser->allUser
+Fail to call object on page request AuthUser->createUser
